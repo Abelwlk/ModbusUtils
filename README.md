@@ -1,0 +1,3 @@
+# ModbusUtils
+modbus读取保持寄存器，仅实现读取holdingRegister，支持modbusTcp和modBusRtu。
+其他寄存器读写可参考modbus4j。
