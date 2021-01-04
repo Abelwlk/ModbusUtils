@@ -11,7 +11,7 @@ import com.serotonin.modbus4j.serial.SerialPortWrapper;
  * @author weiliangkang
  * @date 2020/12/3 14:27
  */
-public class ModbusRtuMaster extends com.cczu.modbus.ModbusMaster {
+public class ModbusRtuMaster extends BaseMaster {
 
     private static final ModbusFactory MODBUS_FACTORY;
 

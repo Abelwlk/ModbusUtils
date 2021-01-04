@@ -1,4 +1,4 @@
-import com.cczu.modbus.ModbusMaster;
+import com.cczu.modbus.BaseMaster;
 import com.cczu.modbus.ModbusRtuMaster;
 import com.cczu.modbus.ModbusTcpMaster;
 import com.cczu.modbus.common.PropertiesUtil;
@@ -19,7 +19,7 @@ public class test {
 
     @Test
     public void test02() {
-        ModbusMaster master = new ModbusTcpMaster();
+        BaseMaster master = new ModbusTcpMaster();
         SimpleByteQueue simpleByteQueue = master.readHoldingRegister(1, 1, 15);
         while (simpleByteQueue.hasNext()) {
             int next = simpleByteQueue.next();
@@ -29,7 +29,7 @@ public class test {
 
     @Test
     public void test03() {
-        ModbusMaster master = new ModbusRtuMaster();
+        BaseMaster master = new ModbusRtuMaster();
         SimpleByteQueue simpleByteQueue = master.readHoldingRegister(1, 1);
         while (simpleByteQueue.hasNext()) {
             int next = simpleByteQueue.next();

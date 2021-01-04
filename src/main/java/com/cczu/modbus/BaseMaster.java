@@ -12,7 +12,7 @@ import java.util.Objects;
  * @author weiliangkang
  * @date 2020/12/3 14:28
  */
-public abstract class ModbusMaster {
+public abstract class BaseMaster {
 
     /**
      * 获取相应的Master，声明为抽象方法，让子类必须实现
